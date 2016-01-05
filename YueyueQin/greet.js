@@ -1,4 +1,4 @@
 module.exports = function(name) {
-  debugger; 
+  debugger;
   return 'hello ' + name;
 };
