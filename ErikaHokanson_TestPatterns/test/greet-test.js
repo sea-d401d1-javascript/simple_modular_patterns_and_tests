@@ -3,19 +3,19 @@ var greet2 = require(__dirname + '/../greet2');
 var expect = require('chai').expect;
 
 describe('the greet function', function() {
-  it('should greet a name', function() {
-    expect(greet('test')).to.eql('hello test');
+  it('aloha Rikki', function() {
+    expect(greet('test')).to.eql('aloha test');
   });
 
-  it('solve the all world\'s problems');
+  it('makes banana splits');
 
-  it('fails on an error', function() {
-    throw new Error('some test error');
+  it('melts in the sun', function() {
+    throw new Error('halt error');
   });
 });
 
-describe('greet 2 electric boogaloo', function() {
-  it('should have a greet property that greets someone', function() {
-    expect(greet2.greet('test')).to.eql('hello a second time test');
+describe('greet 2 won\'t you', function() {
+  it('howdy doody', function() {
+    expect(greet2.greet('test')).to.eql('aloha test two');
   });
 });
