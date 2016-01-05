@@ -9,7 +9,7 @@
 
 ##Description:
 This assignment will have you create a simple Javascript object that will be exported using the Node modular pattern we went over in class.
-Your object should have a function named 'greet' that takes a name as a parameter and returns the string 'hello ' + name 
+Your object should have a function named 'greet' that takes a name as a parameter and returns the string 'hello ' + name
 
 You should have at least one test that verifies the output of the function.
 
@@ -24,4 +24,4 @@ For a second bonus point, write a test that makes sure that the arguments are be
   * Proper Styling: 2pts
   * Proper Submission: 2pts
   * Mocha/Chai Test: 3pts
-  * Use of Modular Pattern/design of greet object/function: 3pts 
+  * Use of Modular Pattern/design of greet object/function: 3pts
