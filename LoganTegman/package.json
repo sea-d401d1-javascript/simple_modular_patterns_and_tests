@@ -1,0 +1,26 @@
+{
+  "name": "simple-module-patterns-logan",
+  "version": "0.0.1",
+  "description": "first codefellows assignment",
+  "main": "greet.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltegman/simple_modular_patterns_and_tests.git"
+  },
+  "author": "Logan Tegman <ltegman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ltegman/simple_modular_patterns_and_tests/issues"
+  },
+  "homepage": "https://github.com/ltegman/simple_modular_patterns_and_tests#readme"
+}
