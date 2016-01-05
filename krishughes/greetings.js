@@ -3,4 +3,3 @@ module.exports = {
     return 'hello ' + name;
   }
 };
-
