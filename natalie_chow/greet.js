@@ -2,13 +2,21 @@ var greet = function(name) {
   return 'hello ' + name;
 };
 
-exports.handleConsole = (function(cmdArgs) {
+exports.greet = greet;
+
+var msg = [];
+(exports.handleCmd = function(cmdArgs) {
   if (cmdArgs.length > 2) {
     var args = cmdArgs.slice(2);
-    args.forEach(function(arg) {
-      console.log(greet(arg));
+    msg = args.map(function(arg) {
+      return greet(arg);
     });
   }
+  return msg;
 })(process.argv);
 
-exports.greet = greet;
+if (msg.length) {
+  msg.forEach(function(m) {
+    console.log(m);
+  });
+}
