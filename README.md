@@ -13,7 +13,7 @@ Your object should have a function named 'greet' that takes a name as a paramete
 
 You should have at least one test that verifies the output of the function.
 
-Your submission should be a link to a pull request to your own repository.
+Your submission should be a link to your pull request.
 
 ##Bonus:
 For an extra point, create a command line utility that will be run using node greet.js 'some name' and will pass the input contained in that argument to the greet function and output the result to the screen.
