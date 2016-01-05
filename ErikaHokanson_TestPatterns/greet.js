@@ -1,5 +1,5 @@
 module.exports = function(name) {
-  return 'hello ' + Rikki;
+  return 'aloha ' + name;
 };
 
 console.log('hello from inside greet');

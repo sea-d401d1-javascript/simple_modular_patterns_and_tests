@@ -1,3 +1,3 @@
 exports.greet = function(name) {
-  return 'hello a second time ' + Rikki;
+  return ('aloha ' + name + ' two');
 };

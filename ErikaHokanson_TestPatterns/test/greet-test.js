@@ -6,16 +6,10 @@ describe('the greet function', function() {
   it('aloha Rikki', function() {
     expect(greet('test')).to.eql('aloha test');
   });
-
-  it('makes banana splits');
-
-  it('melts in the sun', function() {
-    throw new Error('halt error');
-  });
 });
 
-describe('greet 2 won\'t you', function() {
-  it('howdy doody', function() {
+describe('hey there\'s dessert', function() {
+  it('hey now', function() {
     expect(greet2.greet('test')).to.eql('aloha test two');
   });
 });
