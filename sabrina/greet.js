@@ -1,5 +1,7 @@
 module.exports = function(name){
-  return 'hello ' + name;
+  if(process.argv[2] == undefined) {
+    return 'Hello ' + name;
+  } else {
+    return 'Hello ' + process.argv[2];
+  }
 };
-
-console.log('this should be run first');

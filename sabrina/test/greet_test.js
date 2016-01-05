@@ -4,6 +4,12 @@ var expect = require('chai').expect;
 
 describe('greet function', function() {
   it('should greet a name', function() {
-    expect(greet_test('test')).to.eql('hello test');
+    expect(greet_test('user')).to.eql('Hello user');
+  });
+});
+
+describe('command line input', function() {
+  it('should show command line input', function() {
+    expect(greet_test(process.argv[2])).to.eql('Hello undefined');
   });
 });

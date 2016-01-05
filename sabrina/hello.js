@@ -1,3 +1,3 @@
 var greet = require('./greet');
 
-console.log(greet('sabrina'));
+console.log(greet('user'));
