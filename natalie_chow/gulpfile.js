@@ -8,7 +8,6 @@ gulp.task('lint', function() {
       'rules': {
         'indent': [2, 2],
         'quotes': [2, 'single'],
-        'linebreak-style': [2, 'windows'],
         'semi': [2, 'always']
       },
       'env': {
@@ -16,7 +15,15 @@ gulp.task('lint', function() {
         'node': true,
         'browser': true
       },
-      'extends': 'eslint:recommended'
+      'extends': 'eslint:recommended',
+      'global': {
+        'describe': true,
+        'it': true,
+        'before': true,
+        'after': true,
+        'beforeEach': true,
+        'afterEach': true
+      }
     }))
     .pipe(eslint.format());
 });
