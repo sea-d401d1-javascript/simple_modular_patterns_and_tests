@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     eslint = require('gulp-eslint'),
-    files = ['**/*.js', '!node_modules//**', '!**/*.json'];
+    files = ['**/*.js', '!node_modules//**'];
 
 gulp.task('lint', function() {
   return gulp.src(files)
@@ -21,7 +21,7 @@ gulp.task('lint', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('**/*.js', ['lint']);
+  gulp.watch(files, ['lint']);
 });
 
 gulp.task('default', ['watch', 'lint']);
