@@ -6,19 +6,23 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-    "chai": "^3.4.1"
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.3.4"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/mocha/bin/mocha test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ltegman/simple_modular_patterns_and_tests.git"
   },
   "author": "Logan Tegman <ltegman@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ltegman/simple_modular_patterns_and_tests/issues"
   },
