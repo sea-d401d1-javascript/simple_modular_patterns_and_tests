@@ -1,0 +1,23 @@
+{
+  "name": "sabrina",
+  "version": "1.0.0",
+  "description": "Add a gulpfile and a package.json to greet assignment",
+  "main": "greet.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^1.10.3",
+    "eslint-config-google": "^0.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "author": "Sabrina Tee",
+  "license": "MIT"
+}
