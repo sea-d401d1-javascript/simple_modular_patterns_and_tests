@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
+var mocha = require('gulp-mocha');
 
 gulp.task('lint', function() {
   return gulp.src(['**/*.js', '!**/node_modules/**'])
@@ -20,6 +21,11 @@ gulp.task('lint', function() {
     .pipe(eslint.format());
 });
 
+gulp.task('test', function() {
+  return gulp.src(['test/*.js'], { read: false })
+    .pipe(mocha());
+});
+
 gulp.watch(['**/*', '!package.json'], ['default']);
 
-gulp.task('default', ['lint']);
+gulp.task('default', ['lint', 'test']);
