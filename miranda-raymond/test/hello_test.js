@@ -1,8 +1,32 @@
 var hello = require(__dirname + '/../hello');
 var expect = require('chai').expect;
 
-describe('the hello function', function() {
-  it('should greet a name', function() {
-    expect(hello('test')).to.eql('hello test');
+describe('hello function', function() {
+  beforeEach(function() {
+    this.processBackup = process.argv;
+    process.argv = ['node', 'hello.js'];
+  });
+
+  afterEach(function(){
+    process.argv = this.processBackup;
+  });
+
+  it('should greet the world with no process.argv', function() {
+    expect(hello('test')).to.eql('hello world');
+  });
+});
+
+describe('with a name specified', function() {
+  beforeEach(function(){
+      this.processBackup = process.argv;
+      process.argv = ['node', 'hello.js', 'test'];
+    });
+
+  afterEach(function() {
+    process.argv = this.processBackup;
+  });
+
+  it('should greet test', function(){
+    expect(hello()).to.eql('hello test');
   });
 });
