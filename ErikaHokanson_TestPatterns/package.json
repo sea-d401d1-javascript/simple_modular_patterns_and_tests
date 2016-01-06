@@ -1,0 +1,29 @@
+{
+  "name": "erikahokanson",
+  "version": "1.0.0",
+  "description": "folder containing json",
+  "main": "greet.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "testit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikawho/simple_modular_patterns_and_tests.git"
+  },
+  "keywords": [
+    "n/a"
+  ],
+  "author": "Erika Hokanson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erikawho/simple_modular_patterns_and_tests/issues"
+  },
+  "homepage": "https://github.com/erikawho/simple_modular_patterns_and_tests#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.2.0"
+  }
+}
