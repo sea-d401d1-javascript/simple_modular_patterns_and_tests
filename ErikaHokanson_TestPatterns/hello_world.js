@@ -1,2 +1,2 @@
-var greet = require(__dirname + '/greet');
-  console.log(greet('world'));
+var greet = require(__dirname + '/greet'); // eslint-disable-line
+  // console.log(greet('world'));
