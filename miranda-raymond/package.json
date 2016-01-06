@@ -1,0 +1,28 @@
+{
+  "name": "simple_modular_patterns_and_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirandalily/simple_modular_patterns_and_tests.git"
+  },
+  "keywords": [],
+  "author": "miranda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mirandalily/simple_modular_patterns_and_tests/issues"
+  },
+  "homepage": "https://github.com/mirandalily/simple_modular_patterns_and_tests#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "^2.3.4"
+  }
+}
