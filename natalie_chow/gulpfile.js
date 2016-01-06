@@ -19,4 +19,7 @@ gulp.task('lint', function() {
     }))
     .pipe(eslint.format());
 });
+
+gulp.watch(['**/*', '!package.json'], ['default']);
+
 gulp.task('default', ['lint']);
