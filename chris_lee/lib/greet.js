@@ -3,8 +3,8 @@ module.exports = function(name) {
 };
 
 if(!process.argv[2]) { // if user passes no argument in command line
-    console.log('no argument passed');
+    console.log('no argument passed'); // eslint-disable-line
 }
 else {  // if user passes an argument in command line
-    console.log(module.exports(process.argv[2]));
+    console.log(module.exports(process.argv[2])); // eslint-disable-line
 }
