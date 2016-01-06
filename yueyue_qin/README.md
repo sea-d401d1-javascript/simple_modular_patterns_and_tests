@@ -1,27 +1,21 @@
-#Simple Modular and Test Patterns DUE: Jan 5, 2016 by 1pm(class start)
-
-##To Submit this Assignment
-  * fork this repository
-  * write all of your code in a folder containing your name
-  * push to your repository
-  * submit a pull request to this repository
-  * submit a link to your PR in canvas
+#Add a gulpfile and a package.json to your greet assignment DUE: Jan 6, 2016 by 1pm(class start)
 
 ##Description:
-This assignment will have you create a simple Javascript object that will be exported using the Node modular pattern we went over in class.
-Your object should have a function named 'greet' that takes a name as a parameter and returns the string 'hello ' + name 
+For this assignment you will add a gulpfile and a package.json file to your previous assignment.
 
-You should have at least one test that verifies the output of the function.
+The package.json file should include all the dependencies and dev devpendencies for the project.
 
-Your submission should be a link to a pull request to your own repository.
+The gulpfile should contain a task to run the mocha/chai test as well as run jshint on all of your code. This should include your tests and your gulpfile.
+
+Create a second pull request to the simple_modular_and_test_patterns repo, this PR should contain just the code relevant to this assignment(only your package.json/gulpfile) submit a link to that pull request.
 
 ##Bonus:
-For an extra point, create a command line utility that will be run using node greet.js 'some name' and will pass the input contained in that argument to the greet function and output the result to the screen.
+For an extra point, set up a watch task that reruns your tests/jshint on changes to any of your files (minus package.json)
 
-For a second bonus point, write a test that makes sure that the arguments are being processed.
+For another bonus point move the eslint options out of your eslint rc and into gulp
 
 ##Rubric:
-  * Proper Styling: 2pts
-  * Proper Submission: 2pts
-  * Mocha/Chai Test: 3pts
-  * Use of Modular Pattern/design of greet object/function: 3pts 
+  * Correct Submission: 2pts
+  * Passes Jshint: 2Pts
+  * Package.json: 3pts
+  * gulpfile: 3pts
