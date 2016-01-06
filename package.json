@@ -1,0 +1,25 @@
+{
+  "name": "simple_modular_patterns_and_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirandalily/simple_modular_patterns_and_tests.git"
+  },
+  "keywords": [],
+  "author": "miranda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mirandalily/simple_modular_patterns_and_tests/issues"
+  },
+  "homepage": "https://github.com/mirandalily/simple_modular_patterns_and_tests#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp-eslint": "^1.1.1",
+    "mocha": "^2.3.4"
+  }
+}
