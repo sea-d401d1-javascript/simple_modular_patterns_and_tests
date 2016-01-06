@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var mocha = require('gulp-mocha');
 var eslint = require('gulp-eslint');
 
+// All files to watch and lint
 var files = ['test/*.js', '*.js', '!node_modules/**', '!**.json'];
 
 gulp.task('mocha', function() {
