@@ -1,5 +1,5 @@
-var greet = require(__dirname + '/../greet').greet;
-var result = require(__dirname + '/../greet').result;
+var greet = require(__dirname + '/../lib/greet').greet;
+var result = require(__dirname + '/../lib/greet').result;
 var expect = require('chai').expect;
 
 describe('the greet function', function() {

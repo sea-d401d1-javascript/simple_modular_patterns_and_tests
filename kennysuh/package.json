@@ -1,0 +1,21 @@
+{
+  "name": "kennysuh",
+  "version": "1.0.0",
+  "description": "Practicing node.js in Code Fellows 401 JavaScript Accelerator",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kenny Suh",
+  "license": "MIT"
+}
