@@ -46,8 +46,9 @@ gulp.task('mocha', function () {
 		.pipe(mocha({reporter: 'nyan'}));
 });
 
+var watchFiles = ['./*.js', '!./package.json'];
 gulp.task('watch', function(){
-    gulp.watch('./*.js', ['lint']);
+    gulp.watch(watchFiles, ['lint']);
 });
 
 gulp.task('default', ['watch','lint', 'mocha']);
