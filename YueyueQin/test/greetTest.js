@@ -1,10 +1,8 @@
-var greet = require(__dirname + '/../greet'); //__diarname come from node to read local files
-var greet2 = require(__dirname + '/../greet2');
-var greet3 = require(__dirname + '/../greet3');
-var processArgs = greet3.process;
+var greet = require(__dirname + '/../lib/greet'); //__diarname come from node to read local files
+var greet2 = require(__dirname + '/../lib/greet2');
+var hello = require(__dirname + '/../hello.js');
 var expect = require('chai').expect; // module global object
 var assert = require('chai').assert;
-console.log(greet3);
 
 
 describe('Here is greet function test', function(){
@@ -23,9 +21,31 @@ describe('Here is greet2 function test ', function() {
   });
 });
 
-describe('Here is greet3 function text ', function() {
-  it('should process the arguments', function() {
-    // assert.lengthOf(greet3, 2);
-    // expect(greet3).to.equal('hello Seattle');
+describe('Here is greet function command line test ', function() {
+  beforeEach(function() {
+    this.processBackup = process.argv;
+    process.argv = ['node','hello.js'];
+  });
+  afterEach(function() {
+    process.argv = this.processBackup;
+  });
+  it('should greet the world with no process.argv', function() {
+    expect(hello()).to.eql('hello world');
+  });
+});
+
+
+describe('hello with a name specified', function() {
+  beforeEach(function() {
+    this.processBackup = process.argv;
+    process.argv = ['node', 'hello.js', 'success'];
+  });
+
+  afterEach(function() {
+    process.argv = this.processBackup;
+  });
+
+  it('should greet test', function() {
+    expect(hello()).to.eql('hello success');
   });
 });

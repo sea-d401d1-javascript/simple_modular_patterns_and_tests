@@ -3,4 +3,11 @@ processArgs.forEach(function (val, index, array) {
   console.log(index + ': ' + val);
 });
 
-exports.process = processArgs;
+console.log(process.argv[2]);
+module.exports = function(name) {
+  if(name){
+    return 'Hello ' + name;
+  }else{
+    return process.argv[2];
+  }
+};
