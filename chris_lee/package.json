@@ -1,0 +1,37 @@
+{
+  "name": "chris_lee",
+  "version": "1.0.0",
+  "description": "Simple program that takes a name parameter from command line and says hello to the name as an output",
+  "main": "gulp.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-google": "^0.3.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-mocha": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sea-d401d1-javascript/simple_modular_patterns_and_tests.git"
+  },
+  "keywords": [
+    "gulp",
+    "require",
+    "eslint"
+  ],
+  "author": "Chris Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sea-d401d1-javascript/simple_modular_patterns_and_tests/issues"
+  },
+  "homepage": "https://github.com/sea-d401d1-javascript/simple_modular_patterns_and_tests#readme"
+}

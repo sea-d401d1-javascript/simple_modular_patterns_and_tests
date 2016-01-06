@@ -1,4 +1,4 @@
-var greet = require(__dirname + '/../greet');
+var greet = require(__dirname + '/../lib/greet');
 var expect = require('chai').expect;
 process.argv[2] = 'dummy';
 
