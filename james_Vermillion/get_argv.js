@@ -16,7 +16,6 @@
         putNameTogether(i);
       }
     }
-  
     //return name
     return name;
-  }
+  };

@@ -3,4 +3,4 @@ module.exports = {
   greet: function(namer) {
     return 'hello ' + namer;
   }
-}
+};
