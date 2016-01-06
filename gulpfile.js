@@ -14,4 +14,4 @@ gulp.task('lint', function() {
     .pipe(jshint.reporter());
 });
 
-gulp.task('default', ['mocha', 'jshint']);
+gulp.task('default', ['mocha', 'lint']);
