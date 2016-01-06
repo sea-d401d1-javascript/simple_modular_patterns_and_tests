@@ -1,8 +1,8 @@
 {
   "name": "chris_lee",
   "version": "1.0.0",
-  "description": "Simple modular patterns and tests",
-  "main": "greet.js",
+  "description": "Simple program that takes a name parameter from command line and says hello to the name as an output",
+  "main": "gulp.js",
   "directories": {
     "test": "test"
   },
@@ -20,13 +20,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/clee46/simple_modular_patterns_and_tests/tree/master/chris_lee"
+    "url": "git+https://github.com/sea-d401d1-javascript/simple_modular_patterns_and_tests.git"
   },
   "keywords": [
-    "modular",
-    "patterns",
-    "tests"
+    "gulp",
+    "require",
+    "eslint"
   ],
   "author": "Chris Lee",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sea-d401d1-javascript/simple_modular_patterns_and_tests/issues"
+  },
+  "homepage": "https://github.com/sea-d401d1-javascript/simple_modular_patterns_and_tests#readme"
 }
