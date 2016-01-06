@@ -1,0 +1,28 @@
+{
+  "name": "krishughes",
+  "version": "1.0.0",
+  "description": "Says hello and has a grunt file",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kris Hughes",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "jshint-stylish": "^2.1.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "jshint-stylish": "^2.1.0"
+  }
+}
