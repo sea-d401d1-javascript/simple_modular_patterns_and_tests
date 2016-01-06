@@ -1,3 +1,4 @@
+// Greet Function
 var greetFn = function(name) {
   return 'Hello ' + name;
 };
