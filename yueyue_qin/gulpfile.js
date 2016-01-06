@@ -5,9 +5,9 @@ var mocha = require('gulp-mocha');
 var stylish = require('jshint-stylish');
 
 
-var files = ['gulpfile.js', './lib/greet.js', 'hello.js','./lib/greet2.js','./lib/greet3.js','./test/greetTest.js'];
+var files = ['gulpfile.js', './lib/greet.js','./lib/greet2.js','./test/greetTest.js','hello.js'];
 
-gulp.task('lint',function(){
+gulp.task('eslint',function(){
   return gulp.src(files)
     .pipe(eslint())
     .pipe(eslint.format());
@@ -25,4 +25,4 @@ gulp.task('test', function() {
 		.pipe(mocha());
 });
 
-gulp.task('default',['lint','jshint','test']);
+gulp.task('default',['eslint','jshint','test']);
