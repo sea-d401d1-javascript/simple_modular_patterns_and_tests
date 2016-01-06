@@ -1,0 +1,58 @@
+{
+  "name": "greetaaron",
+  "version": "0.1.0",
+  "description": "A simple experiment with hello world and node.",
+  "main": "greet.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "mocha": "^2.3.4",
+    "should": "^8.0.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaronfilson"
+  },
+  "keywords": [
+    "hello",
+    "world"
+  ],
+  "author": "Aaron Filson",
+  "license": "MIT",
+  "eslintConfig": {
+    "rules": {
+        "indent": [
+            2,
+            2
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ]
+    },
+    "extends": "eslint:recommended",
+    "env": {
+      "es6": true,
+      "node": true,
+      "mocha": true
+    }
+  }
+}
