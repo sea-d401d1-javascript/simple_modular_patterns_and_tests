@@ -1,0 +1,21 @@
+{
+  "name": "simple_modular_patterns_and_test",
+  "version": "0.1.0",
+  "description": "class 02 assignment",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha test"
+  },
+  "author": "",
+  "license": "MIT"
+}

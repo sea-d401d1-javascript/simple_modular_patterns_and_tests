@@ -1,0 +1,34 @@
+{
+  "name": "simple_modular_patterns_and_tests",
+  "version": "0.1.0",
+  "description": "Amaze balls app that greets names and shit. Also makes you a ninja. Which is nice.",
+  "main": "hotline_bling.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.4.1"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameron4us/simple_modular_patterns_and_tests.git"
+  },
+  "keywords": [
+    "greet"
+  ],
+  "author": "Cameron Forras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cameron4us/simple_modular_patterns_and_tests/issues"
+  },
+  "homepage": "https://github.com/cameron4us/simple_modular_patterns_and_tests#readme"
+}
