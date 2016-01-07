@@ -1,0 +1,31 @@
+{
+  "name": "darcy_lambrecht",
+  "version": "1.0.0",
+  "description": "an awesome greet app",
+  "main": "hello_world.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlambrecht/simple_modular_patterns_and_tests.git"
+  },
+  "author": "Darcy Lambrecht",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlambrecht/simple_modular_patterns_and_tests/issues"
+  },
+  "homepage": "https://github.com/dlambrecht/simple_modular_patterns_and_tests#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "^2.3.4"
+  }
+}
