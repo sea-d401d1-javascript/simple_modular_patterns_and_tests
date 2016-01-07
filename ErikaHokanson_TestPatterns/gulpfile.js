@@ -4,7 +4,7 @@ var mocha = require('gulp-mocha'); // eslint-disable-line
 
 var files = ['gulpfile.js', 'greet.js', 'hello_world.js', './test/greet-test.js', '!*json', '!node_modules/**'];
 gulp.task('lint', function() {
- return gulp.src(files)
+  return gulp.src(files)
     .pipe(eslint())
     .pipe(eslint.format());
 });
@@ -22,27 +22,37 @@ gulp.task('watch', function() {
 gulp.task('default', ['watch', 'lint', 'mocha']);
 
 gulp.task('lint', function() {
-  return gulp.src(files).pipe(eslint({
-    "rules": {
-      "semi": 1,
-      "strict": 0,
-      "indent": [2, 2],
-      "quotes": [1, "single"],
-      "no-multi-spaces": [1, {
-        "exceptions": {
-          "VariableDeclarator": true,
-          "FunctionExpression": true
+ return gulp.src(files)
+    .pipe(eslint(
+      {
+          'settings': {
+          'ecmascript': 5
         },
-      "env": {
-        "browser": true,
-        "jquery": true,
-        "node": true,
-        "mocha": true
+        'ecmaFeatures': {
+        },
+        'env': {
+          'browser': true,
+          'jquery': true,
+          'node': true,
+          'mocha': true
+        },
+        'rules': {
+          'semi': 1,
+          'strict': 0,
+          'indent': [2, 2],
+          'quotes': [1, 'single'],
+          'no-multi-spaces': [1, {
+            'exceptions': {
+              'VariableDeclarator': true,
+              'FunctionExpression': true
+            }
+          }],
+          'key-spacing': [0, {'align': 'value'}],
+          'no-underscore-dangle': 0
+        }
       }
-      }]
-    }
 
-  }))
-        .pipe(eslint())
-        .pipe(eslint.format());
+
+    ))
+    .pipe(eslint.format());
 });
