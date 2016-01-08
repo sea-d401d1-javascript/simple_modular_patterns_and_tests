@@ -3,8 +3,8 @@ var eslint = require('gulp-eslint');
 var mocha = require('gulp-mocha');
 var files = ['lib/*.js', 'test/*.js', 'gulpfile.js'];
 
-gulp.task('mocha', function() {
-  return gulp.src('test/*.js')
+gulp.task('mocha test', function() {
+  return gulp.src(['test/*.js'])
   .pipe(mocha());
 });
 
@@ -16,13 +16,13 @@ gulp.task('lint', function() {
       modules: true
     },
     rules: {
-      'indent': 2,
+      'indent': [2, 2],
       'quotes': [2, 'single'],
-      'linebreak-style': 2,
+      'linebreak-style': [2, 'unix'],
       'no-unused-vars': 0,
       'no-undef': 0,
       'no-path-concat': 0,
-      'semi': 2
+      'semi': [2, 'always']
     },
     env: {
       es6: true,
@@ -33,8 +33,6 @@ gulp.task('lint', function() {
   .pipe(eslint.format());
 });
 
-gulp.task('default', ['lint', 'mocha'], function() {
-  gulp.watch(files, function() {
-    gulp.run('lint');
-  });
+gulp.task('default', ['lint', 'mocha test'], function() {
+  gulp.watch(files, ['lint', 'mocha test']);
 });
