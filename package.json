@@ -1,0 +1,33 @@
+{
+  "name": "simple_modular_patterns_and_tests",
+  "version": "1.0.0",
+  "description": "\"simple program that greets the world\"",
+  "main": "greet.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scoobahsteve/simple_modular_patterns_and_tests.git"
+  },
+  "author": "\"Stephen Salzer\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scoobahsteve/simple_modular_patterns_and_tests/issues"
+  },
+  "homepage": "https://github.com/scoobahsteve/simple_modular_patterns_and_tests#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^1.10.3",
+    "eslint-config-google": "^0.3.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.4"
+  }
+}
