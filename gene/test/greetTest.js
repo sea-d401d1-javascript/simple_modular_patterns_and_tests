@@ -5,6 +5,6 @@
 
  describe('The Greet Function', function() {
    it('should return "Hello" followed by a name', function() {
-     expect(greet.greet('Sam')).to.equal('Hello Sam');
+     expect(greet.greet('Gene')).to.equal('Hello Gene');
    });
  });
