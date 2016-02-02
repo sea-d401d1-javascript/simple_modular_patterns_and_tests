@@ -1,5 +1,58 @@
-var gulp = require('gulp');
+var gulp = require('gulp'); // eslint-disable-line
+var eslint = require('gulp-eslint'); // eslint-disable-line
+var mocha = require('gulp-mocha'); // eslint-disable-line
 
-gulp.task('default', function() {
-  // place code for your default task here
+var files = ['gulpfile.js', 'greet.js', 'hello_world.js', './test/greet-test.js', '!*json', '!node_modules/**'];
+gulp.task('lint', function() {
+  return gulp.src(files)
+    .pipe(eslint())
+    .pipe(eslint.format());
+});
+
+gulp.task('mocha', function() {
+ return gulp.src('./test/greet-test.js', {read: false})
+		// gulp-mocha needs filepaths so you can't have any plugins before it
+		.pipe(mocha({reporter: 'nyan'}));
+});
+
+gulp.task('watch', function() {
+ return gulp.watch(files, ['lint', 'mocha']);
+});
+
+gulp.task('default', ['watch', 'lint', 'mocha']);
+
+gulp.task('lint', function() {
+ return gulp.src(files)
+    .pipe(eslint(
+      {
+          'settings': {
+          'ecmascript': 5
+        },
+        'ecmaFeatures': {
+        },
+        'env': {
+          'browser': true,
+          'jquery': true,
+          'node': true,
+          'mocha': true
+        },
+        'rules': {
+          'semi': 1,
+          'strict': 0,
+          'indent': [2, 2],
+          'quotes': [1, 'single'],
+          'no-multi-spaces': [1, {
+            'exceptions': {
+              'VariableDeclarator': true,
+              'FunctionExpression': true
+            }
+          }],
+          'key-spacing': [0, {'align': 'value'}],
+          'no-underscore-dangle': 0
+        }
+      }
+
+
+    ))
+    .pipe(eslint.format());
 });
