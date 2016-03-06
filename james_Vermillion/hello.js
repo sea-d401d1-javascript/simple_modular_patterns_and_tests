@@ -1,3 +1,5 @@
+//this can be run from the console to say hello to the arguments provided.
+
 //import from greetHomework.js & get_argv
 var greeter = require('./greetModule');
 var argGetter = require('./get_argv');
